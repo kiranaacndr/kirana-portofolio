@@ -26,7 +26,20 @@ footer{background:var(--dark);color:#d8bfc0;padding:19px 0}.foot{display:flex;ju
 @media(max-width:620px){.wrap{width:calc(100% - 38px)}.nav{height:64px}.menu{display:block}.navlinks{display:none;position:absolute;top:64px;left:0;right:0;background:var(--cream);padding:22px;flex-direction:column;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.nav .contactlink{display:none}.hero{grid-template-columns:1fr;gap:48px}.hero h1{font-size:clamp(62px,16vw,83px)}.visual{justify-self:center;width:82%;margin-right:12px}.head{display:block;margin-bottom:35px}.intro{margin-top:18px}.about,.case,.writing{grid-template-columns:1fr;gap:25px}.work{grid-template-columns:28px 1fr;padding:21px 17px}.work .tag{grid-column:2;width:max-content}.details{grid-column:2}.casecontent{border:0;border-top:1px solid var(--line);padding:25px 0 0}.feature{min-height:320px;padding:28px}.side{grid-template-columns:1fr 1fr}.writingcard{padding:19px}.skills{grid-template-columns:1fr 1fr}.edu{grid-template-columns:1fr}section.content{padding:75px 0}}
 @media(max-width:390px){.side{grid-template-columns:1fr}.skill{padding:19px}.skill h3{font-size:24px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}.reveal{opacity:1;transform:none}}
-</style>
+.portrait {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+}
+
+.portrait img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 28%;
+}</style>
 </head>
 <body>
 <header><div class="wrap nav">
@@ -39,7 +52,9 @@ footer{background:var(--dark);color:#d8bfc0;padding:19px 0}.foot{display:flex;ju
 <div><div class="eyebrow kicker">Writer · Communication · Digital content</div><h1>I write<br><em>things</em><br>people remember.</h1>
 <p class="lead">I'm Kirana — a Communication Science student with a curiosity for words, people, and the stories that connect them. I bring together writing, customer communication, and digital content to make messages feel more human.</p>
 <div class="actions"><a class="btn" href="#work">Explore my work ↗</a><a class="under" href="#about">A little about me</a></div><div class="meta" style="margin-top:55px;color:var(--muted)">Scroll to explore ↓</div></div>
-<div class="visual"><div class="portrait"><div><span class="monogram">K.</span><small>Your portrait goes here<br>Replace this panel with a photo</small></div></div><div class="note"><strong>Words, work & little observations.</strong><span>The Kirana Archive</span></div></div>
+<div class="portrait">
+  <img src="1000295510.jpg" alt="Kirana Candraningtyas">
+</div><div class="note"><strong>Words, work & little observations.</strong><span>The Kirana Archive</span></div></div>
 </section>
 <section class="content" id="about"><div class="wrap">
 <div class="head reveal"><div><div class="eyebrow">01 / About</div><h2>The person<br>behind the words.</h2></div><p class="intro">A little context about who I am, what I've learned, and the kind of work I want to keep growing into.</p></div>
